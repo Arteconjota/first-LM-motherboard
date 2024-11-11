@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Componentes Placa Base</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgba(0, 0, 0, 0.856);
+      background-image: url(placaBase/bc.png);
+    }
+
+    h1 {
+      font-family: Verdana, sans-serif;
+      font-size: 3.5em;
+      margin-top: 120px;
+      margin-bottom: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #42c920;
+      text-shadow: 0 0 15px #42c920;
+    }
+
+    table {
+      width: 75%;
+      height: auto;
+      margin: 0 auto;
+      background-color: black;
+      border: #42c920a6 1px double;
+      border-radius: 15px;
+      box-shadow: 0px 0px 85px #42c920;
+      margin-top: 60px;
+      margin-bottom: 120px;
+    }
+
+    .titles {
+      background-color: aliceblue;
+      color: whitesmoke;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .titles>td {
+      background-color: rgba(0, 0, 0, 0.882);
+      font-family: Verdana, sans-serif;
+      font-weight: bold;
+    }
+
+    .izq {
+      border-radius: 10px 0 0 0;
+    }
+
+    .der {
+      border-radius: 0 10px 0 0;
+    }
+
+    .right {
+      border-radius: 5px 5px 15px 5px;
+    }
+
+    .left {
+      border-radius: 5px 5px 5px 15px;
+    }
+
+    .zero {
+      border-radius: 0;
+    }
+
+    .first {
+      border-radius: 0 0 5px 5px;
+    }
+
+    tr>td {
+      text-align: center;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .comp>td {
+      background-color: rgba(169, 169, 169, 0.501);
+      background-image: url(placaBase/table.png);
+      font-family: Verdana, sans-serif;
+    }
+
+    .comp:hover {
+      background-color: #42c920;
+      background-image: unset;
+      box-shadow: 0px 0px 20px #42c920;
+    }
+
+    .comp>td>img {
+      width: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Componentes de una Placa Base</h1>
+  <table>
+    <tr class="titles">
+      <td class="izq">nombre</td>
+      <td class="zero">descripción</td>
+      <td class="zero">rango de precio</td>
+      <td class="der">imagen</td>
+    </tr>
+    <tr class="comp">
+      <td class="first">Zócalo</td>
+      <td class="first">
+        Recibe también el nombre de socket y es ahí donde se encastra la CPU
+        correspondiente. Es muy importante que ambos compartan la nomenclatura
+        y sean compatibles. Es el conector donde se instala el procesador
+        (CPU).
+      </td>
+      <td class="first">Entre 80€ y 500€</td>
+      <td class="first" title="Esto es un zócalo">
+        <img src="placaBase/zocalo.jpg" />
+      </td>
+    </tr>
+    <tr class="comp">
+      <td>Chipset</td>
+      <td>
+        Controla la comunicación entre la CPU, la RAM y otros componentes como
+        los periféricos. Es el centro de comunicaciones de la placa base. Es el que
+        controla y organiza los datos entre el procesador y el resto de componentes para que todo funcione
+        correctamente.
+      </td>
+      <td>Entre 100€ y 500€</td>
+      <td title="Esto es un chipset">
+        <img src="placaBase/chipset.jpg" />
+      </td>
+    </tr>
+    <tr class="comp">
+      <td>Disipadores</td>
+      <td>
+        Ayudan al resto de componentes que puede haber en la placa base a evacual el calor residual.
+      </td>
+      <td>Entre 20€ y 100€</td>
+      <td title="Esto es un disipador">
+        <img src="placaBase/disipador.jpg" />
+      </td>
+    </tr>
+    <tr class="comp">
+      <td>Ranuras de Memoria RAM</td>
+      <td>
+        Permiten instalar módulos de memoria RAM en la placa base.Varía de 2 a
+        8 (las placas base para usuarios comunes suelen tener 4). Desde 32 GB
+        hasta 128 GB o más en placas avanzadas.
+      </td>
+      <td>Entre 20€ y 1.000€</td>
+      <td title="Esto es una RAM">
+        <img src="placaBase/ram.jpg" />
+      </td>
+    </tr>
+    <tr class="comp">
+      <td>Ranuras de expansión PCIe</td>
+      <td>
+        Permiten instalar tarjetas de expansión como tarjetas gráficas,
+        tarjetas de red o tarjetas de sonido.
+      </td>
+      <td>Entre 150€ y 400€</td>
+      <td title="Esto es un PCI">
+        <img src="placaBase/expPCI.jpg" />
+      </td>
+    </tr>
+    <tr class="comp">
+      <td>Conectores SATA y M.2</td>
+      <td>
+        Se usan para conectar unidades de almacenamiento, como discos duros
+        (HDD) o unidades de estado sólido (SSD). Las placas modernas suelen
+        tener al menos 1 o 2 ranuras M.2.
+      </td>
+      <td>Entre 120€ y 400€</td>
+      <td title="Esto es un SATA">
+        <img src="placaBase/Conector-SATA-1.jpg" />
+      </td>
+    </tr>
+    <tr class="comp">
+      <td>BIOS/UEFI</td>
+      <td>
+        Es el sistema que permite que la placa base se comunique con el
+        hardware al encender el ordenador. Ofrece una interfaz gráfica más
+        avanzada y mayor compatibilidad con discos duros grandes y sistemas de
+        64 bits.
+      </td>
+      <td>
+        Integrado en la placa base, sin un precio específico por separado.
+      </td>
+      <td title="Esto es una BIOS">
+        <img src="placaBase/bios.jpg" />
+      </td>
+    </tr>
+    <tr class="comp">
+      <td>Puertos de Entrada/Salida</td>
+      <td>
+        Son los puertos que permiten conectar dispositivos externos como
+        monitores, teclados, ratones, USB, etc.
+      </td>
+      <td>
+        Entre 80€ y 400€ (Dependiendo de la cantidad y tipos de puertos)
+      </td>
+      <td title="Esto son varios puertos de entrada y salida">
+        <img src="placaBase/puertos.jpg" />
+      </td>
+    </tr>
+    <tr class="comp">
+      <td class="left">Sistema de Alimentación (VRM)</td>
+      <td>
+        Regula y suministra energía de manera estable a la CPU y otros
+        componentes. Las placas con un VRM de mejor calidad ofrecen mejor
+        estabilidad, especialmente en sistemas de alto rendimiento.
+      </td>
+      <td>Entre 150€ y 500€</td>
+      <td class="right" title="Esto es un conector de alimentación con VMR">
+        <img src="placaBase/sistAlimentacion.jpg">
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
